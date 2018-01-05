@@ -1,0 +1,27 @@
+H:\code\csharp\BestEditor\BestEditor\bin\Debug\BestEditor.exe
+H:\code\csharp\BestEditor\BestEditor\bin\Debug\BestEditor.pdb
+H:\code\csharp\BestEditor\BestEditor\obj\Debug\ResolveAssemblyReference.cache
+H:\code\csharp\BestEditor\BestEditor\obj\Debug\BestEditor.Main.resources
+H:\code\csharp\BestEditor\BestEditor\obj\Debug\BestEditor.Properties.Resources.resources
+H:\code\csharp\BestEditor\BestEditor\obj\Debug\BestEditor.csproj.GenerateResource.Cache
+H:\code\csharp\BestEditor\BestEditor\obj\Debug\BestEditor.exe
+H:\code\csharp\BestEditor\BestEditor\obj\Debug\BestEditor.pdb
+H:\code\csharp\BestEditor\BestEditor\obj\Debug\BestEditor.Search.resources
+H:\code\csharp\BestEditor\BestEditor\obj\Debug\BestEditor.Change.resources
+H:\code\csharp\BestEditor\BestEditor\obj\Debug\BestEditor.Goto.resources
+H:\code\csharp\BestEditor\BestEditor\obj\Debug\BestEditor.AboutBox.resources
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\bin\Debug\BestEditor.exe.config
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\bin\Debug\BestEditor.exe
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\bin\Debug\BestEditor.pdb
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\obj\Debug\BestEditor.AboutBox.resources
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\obj\Debug\BestEditor.Change.resources
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\obj\Debug\BestEditor.Classify.resources
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\obj\Debug\BestEditor.Main.resources
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\obj\Debug\BestEditor.Goto.resources
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\obj\Debug\BestEditor.OpenFile.resources
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\obj\Debug\BestEditor.Properties.Resources.resources
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\obj\Debug\BestEditor.Search.resources
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\obj\Debug\BestEditor.csproj.GenerateResource.Cache
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\obj\Debug\BestEditor.exe
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\obj\Debug\BestEditor.pdb
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\obj\Debug\BestEditor.csprojResolveAssemblyReference.cache
