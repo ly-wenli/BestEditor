@@ -358,7 +358,18 @@ namespace BestEditor
                      * **/
                     DialogResult dr = MessageBox.Show("是否将更改保存?","记事本", MessageBoxButtons.YesNoCancel);
                     if (dr == DialogResult.Yes)
-                        richTextBoxBoard.SaveFile(path, RichTextBoxStreamType.PlainText);
+                    {
+                        string content = richTextBoxBoard.Text;
+                        /**
+                         * 这是个已经存在的文件
+                         * **/
+                        textContent.Content = content;                  
+                        handleImpl.update(textContent);
+                        Main.form1.richTextBoxBoard.Text = "";
+                        OpenFile openFile = new OpenFile();
+                        openFile.Owner = this;
+                        openFile.Show();
+                    }
                     else if (dr == DialogResult.No)
                         e.Cancel = false;
                     else
