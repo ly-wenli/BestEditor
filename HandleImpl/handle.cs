@@ -8,10 +8,11 @@ namespace HandleImpl
 {
     public interface Handle
     {
-        void save();
+        void save(String classity_content, String file_name, String content);
         void delete();
         void update();
         void InitFile();
         List<String> HandleClassify(String path);
+        void SaveFileJudge(String classity_content);
     }
 }

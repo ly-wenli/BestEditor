@@ -16,33 +16,22 @@ namespace BestEditor
 {
     public partial class Classify : Form
     {
-        List<string> list_path = new List<string>();//定义list变量，存放获取到的路径
-   //     List<string> list_classity_path = null;//定义list变量，存放获取到的路径
         String content = null;//保存的文件内容
         String classity_content = null; //获取前台选择的分类内容
-
         HandleDao handleImpl = new HandleDao();
         List<String> classify = new List<String>();
+
+
         public Classify(String content )
         {
             InitializeComponent();
             this.content = content;
             //先判断文件是否存在
             //初始化类别
-          classify = handleImpl.HandleClassify("C:\\BestEditor");
-          ClassifyToView();
+            classify = handleImpl.HandleClassify("C:\\BestEditor");
+            ClassifyToView();
         }
 
-        private void ClassifyToView() {
-            if (classify.Count != 0)
-            {
-                foreach (String content in classify)
-                {
-                    comboBox1.Items.Add(content);           
-                }
-                comboBox1.SelectedIndex = 0;//设置comboBox1的首选项
-            }
-        }
 
         private void classify_Load(object sender, EventArgs e)
         {
@@ -66,15 +55,8 @@ namespace BestEditor
         {
             classity_content = comboBox1.Text;
             String file_name = textBox1.Text; // 保存的文件名
-            /**
-             * 判断文件是否存在
-             * **/
-            sevaFileJudge();
-            string pathout = "C:\\BestEditor\\js" + classity_content + "js\\sj" + file_name + ".txt";
-            StreamWriter sw = new StreamWriter(pathout, true);
-            sw.WriteLine(content);
-            sw.Close();
-            sw.Dispose();
+            handleImpl.SaveFileJudge(classity_content);//保存前的文件判断
+            handleImpl.save(classity_content, file_name, content);
             this.Close();
         }
 
@@ -82,7 +64,6 @@ namespace BestEditor
         {
            
         }
-
     
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -102,27 +83,25 @@ namespace BestEditor
         {
 
         }
-
         private void textBox1_Click(object sender, EventArgs e)
         {
            
         }
-
-        /**
-         * 文件BestEditor的初始化
-         * **/
-        private void sevaFileJudge()
-        {
-            string path = "C:\\BestEditor\\js"+classity_content+"js\\";
-            if (!System.IO.Directory.Exists(path))
-            {
-                System.IO.Directory.CreateDirectory(path);//不存在就创建目录 
-            }
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void ClassifyToView()
+        {
+            if (classify.Count != 0)
+            {
+                foreach (String content in classify)
+                {
+                    comboBox1.Items.Add(content);
+                }
+                comboBox1.SelectedIndex = 0;//设置comboBox1的首选项
+            }
         }
     }
 }

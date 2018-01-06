@@ -5,14 +5,20 @@ using System.Text;
 using System.Threading.Tasks;
 using HandleImpl;
 using Model;
+using System.IO;
 
 
 namespace Dao
 {
     public class HandleDao : Handle
     {
-        public void save(){
-        
+        public void save(String classity_content,String file_name,String content)
+        {
+            string pathout = "C:\\BestEditor\\js" + classity_content + "js\\sj" + file_name + ".txt";
+            StreamWriter sw = new StreamWriter(pathout, true);
+            sw.WriteLine(content);
+            sw.Close();
+            sw.Dispose();      
         }
         public void delete() { 
         
@@ -28,6 +34,14 @@ namespace Dao
         { 
             HandleFile handFile = new HandleFile();
             return handFile.getClassify(path);
+        }
+        public void SaveFileJudge(String classity_content)
+        {
+            string path = "C:\\BestEditor\\js" + classity_content + "js\\";
+            if (!System.IO.Directory.Exists(path))
+            {
+                System.IO.Directory.CreateDirectory(path);//不存在就创建目录 
+            }
         }
     }
 }
