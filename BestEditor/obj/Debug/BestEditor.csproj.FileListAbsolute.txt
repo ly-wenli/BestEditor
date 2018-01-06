@@ -25,3 +25,9 @@ C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\obj\
 C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\obj\Debug\BestEditor.exe
 C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\obj\Debug\BestEditor.pdb
 C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\obj\Debug\BestEditor.csprojResolveAssemblyReference.cache
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\bin\Debug\Dao.exe
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\bin\Debug\HandleImpl.exe
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\bin\Debug\Model.exe
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\bin\Debug\Dao.pdb
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\bin\Debug\HandleImpl.pdb
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\bin\Debug\Model.pdb

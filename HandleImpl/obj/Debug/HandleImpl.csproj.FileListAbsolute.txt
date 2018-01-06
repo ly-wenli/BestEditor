@@ -1,0 +1,8 @@
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\HandleImpl\bin\Debug\HandleImpl.exe.config
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\HandleImpl\bin\Debug\HandleImpl.exe
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\HandleImpl\bin\Debug\HandleImpl.pdb
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\HandleImpl\bin\Debug\Model.exe
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\HandleImpl\bin\Debug\Model.pdb
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\HandleImpl\obj\Debug\HandleImpl.csprojResolveAssemblyReference.cache
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\HandleImpl\obj\Debug\HandleImpl.exe
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\HandleImpl\obj\Debug\HandleImpl.pdb

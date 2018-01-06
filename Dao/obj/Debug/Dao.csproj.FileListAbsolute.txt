@@ -1,0 +1,10 @@
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\Dao\obj\Debug\Dao.csprojResolveAssemblyReference.cache
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\Dao\bin\Debug\Dao.exe.config
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\Dao\bin\Debug\Dao.exe
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\Dao\bin\Debug\Dao.pdb
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\Dao\bin\Debug\HandleImpl.exe
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\Dao\bin\Debug\Model.exe
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\Dao\bin\Debug\HandleImpl.pdb
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\Dao\bin\Debug\Model.pdb
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\Dao\obj\Debug\Dao.exe
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\Dao\obj\Debug\Dao.pdb

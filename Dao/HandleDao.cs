@@ -9,7 +9,7 @@ using Model;
 
 namespace Dao
 {
-    class Handle:Handle
+    public class HandleDao : Handle
     {
         public void save(){
         
@@ -19,6 +19,15 @@ namespace Dao
         }
         public void update() { 
         
+        }
+        public void InitFile()
+        { 
+
+        }
+        public List<String> HandleClassify(String path)
+        { 
+            HandleFile handFile = new HandleFile();
+            return handFile.getClassify(path);
         }
     }
 }

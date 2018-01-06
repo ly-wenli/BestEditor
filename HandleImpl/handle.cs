@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace HandleImpl
 {
-    interface Handle
+    public interface Handle
     {
-        public void save();
-        public void delete();
-        public void update();
+        void save();
+        void delete();
+        void update();
+        void InitFile();
+        List<String> HandleClassify(String path);
     }
 }

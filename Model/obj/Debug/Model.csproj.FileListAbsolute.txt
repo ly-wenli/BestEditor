@@ -1,0 +1,5 @@
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\Model\bin\Debug\Model.exe.config
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\Model\bin\Debug\Model.exe
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\Model\bin\Debug\Model.pdb
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\Model\obj\Debug\Model.exe
+C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\Model\obj\Debug\Model.pdb
