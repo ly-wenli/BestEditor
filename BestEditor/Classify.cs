@@ -18,7 +18,7 @@ namespace BestEditor
     {
         String content = null;//保存的文件内容
         String classity_content = null; //获取前台选择的分类内容
-        HandleDao handleImpl = new HandleDao();
+        Handle handleImpl = new HandleDao();
         List<String> classify = new List<String>();
 
 

@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Dao;
+using HandleImpl;
+using Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,31 +18,18 @@ namespace BestEditor
         public static Main form1;
         private bool isTextChanged;
         public static string path;//记录文件路径（刚新建的文件路径为""，打开的文件路径为原路径）
+        public static TextContent textContent = null;
 
+        Handle handleImpl = new HandleDao();
         public Main()
         {
             InitializeComponent();
             this.Text = "记事本";
-            judgeFile();
+            handleImpl.SaveFileJudge("默认存储");
             path = "";//初始化path
             form1 = this;
         }
-        /**
-         * 初始化文件夹
-         * **/
-        private void judgeFile()
-        {
-            string path = "C:\\BestEditor\\js默认存储js";
-            if (!System.IO.Directory.Exists(path))
-            {
-                System.IO.Directory.CreateDirectory(path);//不存在就创建目录 
-            }
-        }
-        /// <summary>
-        /// 初始化窗体
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+
         private void Main_Load(object sender, EventArgs e)
         {
             //初始化，撤销、剪切、复制、删除 不可用
@@ -76,23 +66,10 @@ namespace BestEditor
                     MessageBoxButtons.YesNoCancel);
                 if (dr == DialogResult.Yes)
                 {
-                    //获取或设置指定要在 SaveFileDialog 中显示的文件类型和说明的筛选器字符串
-                    //saveFileDialog1.Filter = @"文本文档(*.txt)|*.txt|所有格式|*.txt;*.doc;*.cs;*.rtf;*.sln";
-                    //if (saveFileDialog1.ShowDialog() == DialogResult.OK)
-                    //{
-                    //    richTextBoxBoard.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.PlainText);
-                    //    richTextBoxBoard.Text = "";
-                    //    path = "";
-                    //}
-                    string pathout = path;
-                    StreamWriter sw = new StreamWriter(pathout, true);
                     string content = richTextBoxBoard.Text;
-                    sw.WriteLine(content);
-                    sw.Close();
-                    sw.Dispose();
-                    OpenFile openFile = new OpenFile();
-                    openFile.Owner = this;
-                    openFile.Show();
+                    Classify classify = new Classify(content);
+                    classify.Owner = this;
+                    classify.Show();
                 }
                 else if(dr == DialogResult.No)
                 {
@@ -123,26 +100,11 @@ namespace BestEditor
             if (isTextChanged)
             {
 
-                if (!("".Equals(path)))
+                if ("".Equals(path))
                 {
                     /**
-                     * 这是个已经存在的文件
-                     * **/
-                    string pathout = path;
-                    StreamWriter sw = new StreamWriter(pathout, true);
-                    string content = richTextBoxBoard.Text;
-                    sw.WriteLine(content);
-                    sw.Close();
-                    sw.Dispose();
-                    OpenFile openFile = new OpenFile();
-                    openFile.Owner = this;
-                    openFile.Show();
-                }
-                else
-                {
-                    /**
-                     * 这是个不存在的文件
-                     * **/
+                       * 这是个不存在的文件
+                        * **/
                     DialogResult dr = MessageBox.Show("是否将更改保存???", "记事本", MessageBoxButtons.YesNo);
                     if (dr == DialogResult.Yes)
                     {
@@ -153,24 +115,38 @@ namespace BestEditor
                     }
                     else if (dr == DialogResult.No)
                     {/**
-                      * 正常启动打开界面
-                      * **/
+                          * 正常启动打开界面
+                          * **/
+                        Main.form1.richTextBoxBoard.Text = "";
                         OpenFile openFile = new OpenFile();
                         openFile.Owner = this;
                         openFile.Show();
-
                     }
                 }
-            }
-            else
-            {
-                /**
-                 * 没有更改编辑区，正常启动打开界面
-                 * **/
-                OpenFile openFile = new OpenFile();
-                openFile.Owner = this;
-                openFile.Show();
-            }
+                else
+                {
+                    string content = richTextBoxBoard.Text;
+                    /**
+                     * 这是个已经存在的文件
+                     * **/
+                    textContent.Content = content;                  
+                    handleImpl.update(textContent);
+                    Main.form1.richTextBoxBoard.Text = "";
+                    OpenFile openFile = new OpenFile();
+                    openFile.Owner = this;
+                    openFile.Show();
+                }
+                          
+             }else
+             {
+                    /**
+                     * 没有更改编辑区，正常启动打开界面
+                     * **/
+                    Main.form1.richTextBoxBoard.Text = "";
+                    OpenFile openFile = new OpenFile();
+                    openFile.Owner = this;
+                    openFile.Show();
+            }           
         }
 
         private void 保存SToolStripMenuItem_Click(object sender, EventArgs e)
@@ -299,7 +275,7 @@ namespace BestEditor
         {
             string front = richTextBoxBoard.Text.Substring(0, richTextBoxBoard.SelectionStart);
             string back = richTextBoxBoard.Text.Substring(richTextBoxBoard.SelectionStart, 
-                richTextBoxBoard.Text.Length - richTextBoxBoard.SelectionStart);
+            richTextBoxBoard.Text.Length - richTextBoxBoard.SelectionStart);
             richTextBoxBoard.Text = front + DateTime.Now.ToString() + back;
         }
 
@@ -323,11 +299,7 @@ namespace BestEditor
             richTextBoxBoard.SelectionFont = fontDialog1.Font;
         }
 
-        /// <summary>
-        /// 控制底部状态栏显示与否
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+
         private void 状态栏SToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (状态栏SToolStripMenuItem.Checked)
@@ -342,11 +314,6 @@ namespace BestEditor
             }
         }
 
-        /// <summary>
-        /// 输入框光标位置变化时触发
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void richTextBoxBoard_SelectionChanged(object sender, EventArgs e)
         {
             string[] str = richTextBoxBoard.Text.Split('\r', '\n');
@@ -389,8 +356,7 @@ namespace BestEditor
                     /**
                      * 这是个已经存在的文件
                      * **/
-                    DialogResult dr = MessageBox.Show("是否将更改保存到"+path+"?","记事本",
-                        MessageBoxButtons.YesNoCancel);
+                    DialogResult dr = MessageBox.Show("是否将更改保存?","记事本", MessageBoxButtons.YesNoCancel);
                     if (dr == DialogResult.Yes)
                         richTextBoxBoard.SaveFile(path, RichTextBoxStreamType.PlainText);
                     else if (dr == DialogResult.No)

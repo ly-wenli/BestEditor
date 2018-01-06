@@ -23,8 +23,12 @@ namespace Dao
         public void delete() { 
         
         }
-        public void update() { 
-        
+        public void update(TextContent text)
+        {
+            StreamWriter sw = new StreamWriter(text.Path, false);
+            sw.WriteLine(text.Content);
+            sw.Close();
+            sw.Dispose();
         }
         public void InitFile()
         { 

@@ -66,6 +66,7 @@ namespace BestEditor
             Main.form1.richTextBoxBoard.Text = text.Content;
             Main.form1.Text = fileName;
             Main.path = text.Path;
+            Main.textContent = text;
             this.Close();
         }
 

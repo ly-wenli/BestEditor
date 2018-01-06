@@ -67,14 +67,14 @@ namespace Dao
                     fileName.Add(sarray[0]);
                 }
             }
-            //else
-            //{
-            //    if (judge)
-            //    {
-            //        fileName.Add("无文件");
-            //        judge = false;
-            //    }
-            //}
+            else
+            {
+                if (judge)
+                {
+                    fileName.Add("无文件");
+                  //  judge = false;
+                }
+            }
             return fileName;
         }
 

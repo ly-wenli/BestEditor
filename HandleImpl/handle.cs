@@ -10,7 +10,7 @@ namespace HandleImpl
     {
         void save(String classity_content, String file_name, String content);
         void delete();
-        void update();
+        void update(TextContent text);
         void InitFile();
         List<String> HandleClassify(String path);
         void SaveFileJudge(String classity_content);
