@@ -342,6 +342,7 @@ namespace BestEditor
         {
             //调用系统内部的notepad.chm文件
         }
+         
 
         /**
          * 选择关闭主视窗口时进行的操作

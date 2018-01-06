@@ -8,3 +8,16 @@ C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\Dao\bin\Debug\H
 C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\Dao\bin\Debug\Model.pdb
 C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\Dao\obj\Debug\Dao.exe
 C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\Dao\obj\Debug\Dao.pdb
+E:\BestEditor\Dao\bin\Debug\Dao.exe.config
+E:\BestEditor\Dao\bin\Debug\Dao.exe
+E:\BestEditor\Dao\bin\Debug\Dao.pdb
+E:\BestEditor\Dao\bin\Debug\HandleImpl.exe
+E:\BestEditor\Dao\bin\Debug\Model.exe
+E:\BestEditor\Dao\bin\Debug\HandleImpl.pdb
+E:\BestEditor\Dao\bin\Debug\HandleImpl.exe.config
+E:\BestEditor\Dao\bin\Debug\Model.pdb
+E:\BestEditor\Dao\bin\Debug\Model.exe.config
+E:\BestEditor\Dao\obj\Debug\Dao.csprojResolveAssemblyReference.cache
+E:\BestEditor\Dao\obj\Debug\Dao.csproj.CoreCompileInputs.cache
+E:\BestEditor\Dao\obj\Debug\Dao.exe
+E:\BestEditor\Dao\obj\Debug\Dao.pdb

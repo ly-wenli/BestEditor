@@ -31,3 +31,28 @@ C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\bin\
 C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\bin\Debug\Dao.pdb
 C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\bin\Debug\HandleImpl.pdb
 C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\BestEditor\bin\Debug\Model.pdb
+E:\BestEditor\BestEditor\bin\Debug\BestEditor.exe.config
+E:\BestEditor\BestEditor\bin\Debug\BestEditor.exe
+E:\BestEditor\BestEditor\bin\Debug\BestEditor.pdb
+E:\BestEditor\BestEditor\bin\Debug\Dao.exe
+E:\BestEditor\BestEditor\bin\Debug\HandleImpl.exe
+E:\BestEditor\BestEditor\bin\Debug\Model.exe
+E:\BestEditor\BestEditor\bin\Debug\Dao.pdb
+E:\BestEditor\BestEditor\bin\Debug\Dao.exe.config
+E:\BestEditor\BestEditor\bin\Debug\HandleImpl.pdb
+E:\BestEditor\BestEditor\bin\Debug\HandleImpl.exe.config
+E:\BestEditor\BestEditor\bin\Debug\Model.pdb
+E:\BestEditor\BestEditor\bin\Debug\Model.exe.config
+E:\BestEditor\BestEditor\obj\Debug\BestEditor.csprojResolveAssemblyReference.cache
+E:\BestEditor\BestEditor\obj\Debug\BestEditor.AboutBox.resources
+E:\BestEditor\BestEditor\obj\Debug\BestEditor.Change.resources
+E:\BestEditor\BestEditor\obj\Debug\BestEditor.Classify.resources
+E:\BestEditor\BestEditor\obj\Debug\BestEditor.Main.resources
+E:\BestEditor\BestEditor\obj\Debug\BestEditor.Goto.resources
+E:\BestEditor\BestEditor\obj\Debug\BestEditor.OpenFile.resources
+E:\BestEditor\BestEditor\obj\Debug\BestEditor.Properties.Resources.resources
+E:\BestEditor\BestEditor\obj\Debug\BestEditor.Search.resources
+E:\BestEditor\BestEditor\obj\Debug\BestEditor.csproj.GenerateResource.Cache
+E:\BestEditor\BestEditor\obj\Debug\BestEditor.csproj.CoreCompileInputs.cache
+E:\BestEditor\BestEditor\obj\Debug\BestEditor.exe
+E:\BestEditor\BestEditor\obj\Debug\BestEditor.pdb

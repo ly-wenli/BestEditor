@@ -3,3 +3,9 @@ C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\Model\bin\Debug
 C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\Model\bin\Debug\Model.pdb
 C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\Model\obj\Debug\Model.exe
 C:\Users\WenRuo\Documents\Visual Studio 2013\Projects\BestEditor\Model\obj\Debug\Model.pdb
+E:\BestEditor\Model\bin\Debug\Model.exe.config
+E:\BestEditor\Model\bin\Debug\Model.exe
+E:\BestEditor\Model\bin\Debug\Model.pdb
+E:\BestEditor\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\BestEditor\Model\obj\Debug\Model.exe
+E:\BestEditor\Model\obj\Debug\Model.pdb
