@@ -17,23 +17,11 @@ namespace BestEditor
         {
             InitializeComponent();
         }
-
-        /// <summary>
-        /// 初始化时得到主窗口的通讯数据
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void Search_Load(object sender, EventArgs e)
         {
             Main main = (Main)this.Owner;
             this.rtb = main.richTextBoxBoard;
         }
-
-        /// <summary>
-        /// 取消
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();

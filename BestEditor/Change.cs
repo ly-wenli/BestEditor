@@ -27,11 +27,6 @@ namespace BestEditor
             button3.Enabled = false;
         }
 
-        /// <summary>
-        /// 查找下一个
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
             string str = rtb.Text;
@@ -66,21 +61,11 @@ namespace BestEditor
             button3.Enabled = flag;
         }
 
-        /// <summary>
-        /// 取消
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void button4_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        /// <summary>
-        /// 替换
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
         {
             string str = rtb.Text;
@@ -122,11 +107,7 @@ namespace BestEditor
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        /// <summary>
-        /// 全部替换
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+
         private void button3_Click(object sender, EventArgs e)
         {
             string str = rtb.Text;

@@ -38,11 +38,6 @@ namespace BestEditor
             this.Close();
         }
 
-        /// <summary>
-        /// 确定
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
             int row = int.Parse(textBox1.Text);

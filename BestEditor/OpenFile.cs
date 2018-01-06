@@ -59,10 +59,10 @@ namespace BestEditor
         private void button1_Click(object sender, EventArgs e)
         {
             int index = comboBox1.SelectedIndex;
-            string classify= comboBox1.Items[index].ToString();
+            string classify = comboBox1.Items[index].ToString();
             int index2 = comboBox2.SelectedIndex;
             string fileName = comboBox2.Items[index2].ToString();
-            TextContent text = handleImpl.GetFileALL(classify,fileName);
+            TextContent text = handleImpl.GetFileALL(classify, fileName);
             Main.form1.richTextBoxBoard.Text = text.Content;
             Main.form1.Text = fileName;
             Main.path = text.Path;

@@ -13,7 +13,6 @@ namespace BestEditor
     public partial class Main : Form
     {   
         public static Main form1;
-       // public delegate string getContent(string path);
         private bool isTextChanged;
         public static string path;//记录文件路径（刚新建的文件路径为""，打开的文件路径为原路径）
 
@@ -52,12 +51,10 @@ namespace BestEditor
             if (richTextBoxBoard.Equals(""))
             {
                 查找FToolStripMenuItem.Enabled = false;
-                查找下一个NToolStripMenuItem.Enabled = false;
             }
             else
             {
                 查找FToolStripMenuItem.Enabled = true;
-                查找下一个NToolStripMenuItem.Enabled = true;
             }
 
             if (Clipboard.ContainsText())
@@ -228,12 +225,10 @@ namespace BestEditor
             if (richTextBoxBoard.Equals(""))
             {
                 查找FToolStripMenuItem.Enabled = false;
-                查找下一个NToolStripMenuItem.Enabled = false;
             }
             else
             {
                 查找FToolStripMenuItem.Enabled = true;
-                查找下一个NToolStripMenuItem.Enabled = true;
             }
 
             if (Clipboard.ContainsText())
