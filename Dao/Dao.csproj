@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="HandleDao.cs" />
     <Compile Include="HandleFile.cs" />
+    <Compile Include="OpenFile.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

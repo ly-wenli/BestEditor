@@ -43,5 +43,18 @@ namespace Dao
                 System.IO.Directory.CreateDirectory(path);//不存在就创建目录 
             }
         }
+
+
+       public List<String> GetFile(String path) {
+           OpenFile openFile = new OpenFile();
+           return openFile.getFile(path);
+        }
+
+
+       public TextContent GetFileALL(string classify, string fileName)
+       {
+           OpenFile openFile = new OpenFile();
+           return openFile.GetFileALLInformation(classify,fileName);
+       }
     }
 }

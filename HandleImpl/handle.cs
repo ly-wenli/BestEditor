@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Model;
 namespace HandleImpl
 {
     public interface Handle
@@ -14,5 +14,8 @@ namespace HandleImpl
         void InitFile();
         List<String> HandleClassify(String path);
         void SaveFileJudge(String classity_content);
+        List<String> GetFile(String path);
+        TextContent GetFileALL(string classify, string fileName);//获取文件路径
+
     }
 }

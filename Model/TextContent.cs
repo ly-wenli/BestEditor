@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    class TextContent
+   public class TextContent
     {
         private String content; // 定义文本内容
 
@@ -28,6 +28,14 @@ namespace Model
         {
             get { return classify; }
             set { classify = value; }
+        }
+
+        private String path;//文本的路径
+
+        public String Path
+        {
+            get { return path; }
+            set { path = value; }
         }
 
     }
